@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+    <style>
+      .hello-content {
+      display: none;
+         }
+
+
+         </style>
+    <script>
+        function toggleContent(contentType) {
+            if (contentType === 'hi') {
+                document.getElementById('hiContent').style.display = 'block';
+                document.getElementById('helloContent').style.display = 'none';
+            } else if (contentType === 'hello') {
+                document.getElementById('helloContent').style.display = 'block';
+                document.getElementById('hiContent').style.display = 'none';
+            }
+        }
+    </script>
+
+   
+</head>
+
+<body class="bg-pink-400      text-black font-serif pl-3 pr-3 lg:pl-10">
+    <header>
+        <h1 class="font-serif lg:text-3xl md:text-2xl    font-bold pt-3">My Portfolio</h1>
+        <nav class="flex justify-evenly md:text-xl lg:text-xl min-w-fit pt-4 text-xs">
+            <a  href="{{ url_for('home') }}" class=" inset-32 shadow-md font-semibold">Home</a>
+            
+            <a href="{{ url_for('about_me') }}#aboutMe" class=" inset-32 shadow-md font-semibold">About Me</a>
+            <a href="{{ url_for('projects') }}#projects" class=" inset-32 shadow-md font-semibold">Projects</a>
+            <a href="{{ url_for('contact_me') }}#contactMe" class=" inset-32 shadow-md font-semibold">Contact Me</a>
+        </nav>
+        
+        
+    </header>
+    
+    
+    
+
+    <section id="home" class="flex flex-wrap items-center pt-5 min-w-fit">
+        <div class=" rounded-sm  ">
+            <img src="./static/images/me.jpg" class="rounded-t-full lg:w-72 lg:h-72  md:ml-32 mr-20  shadow-md  w-60 h-60 border-2 border-black rounded-b-full object-cover" alt="">
+
+        </div>
+        
+        <div class="rounded-t-full  rounded-b-full lg:ml-20 inset-y-10 p-px bg-gradient-to-b animate-bounce-once from-gray-200 to-transparent shadow-md">
+        <pre class="text-lg  lg:text-6xl md:text-4xl max-w-xs lg:pt-8 ">
+    Hi!
+    I'm Vrushti Shah.
+    A Passionate
+    Web Developer.
+        </pre>
+    </div>
+    </section>
+    <span class="absolute left-35 bg-opacity-20 bg-white border-white border-solid border-opacity-20  w-16 h-16 animate-waving-hand" ></span>
+    <section id="aboutMe" >
+      <h1 class="font-extrabold md:text-4xl text-xl lg:text-5xl pb-5">About Me</h1>
+      <button id="hiButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="toggleContent('hi')">Skills</button>
+      <button id="helloButton" class="ml-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="toggleContent('hello')">Education</button>
+    
+      <div id="hiContent" class="mt-8 text-lg md:text-2xl lg:text-3xl ">
+        <p>Html</p>
+        <p>Css</p>
+        <p>JavaSript</p>
+        <p>Java</p>
+        <p>C</p>
+      </div>
+    
+      <div id="helloContent" class="hello-content mt-8 md:text-2xl text-lg lg:text-3xl ">
+        <p>10th grade</p>
+        <p>Bright Day School, Vadodara 82%</p>
+        <p>12th grade</p>
+        <p>Swaminarayan School, Bhilad 87%</p>
+        <p>College</p>
+        <p>Sardar Vallabhbhai Patel Institute Of Technology</p>
+        <p>CPI:</p>
+        <p>SPI 4th sem</p>
+      </div>
+
+      </section>
+      
+      <div class=" right-30 h-45 w-45  bg-black spin-slow"></div>
+      
+      
+      <span class="absolute left-35 bg-opacity-20 bg-white border-white border-solid border-opacity-20  w-16 h-16 animate-waving-hand" ></span>
+
+      <section id="projects" >
+        
+        <h2 class="lg:text-5xl md:text-4xl   text-xl font-extrabold">Projects</h2>
+            
+    
+                <div class="w-full">
+                    <h1 class="pt-5 pb-5 text-black lg:text-4xl md:text-2xl font-extrabold text-lg">E-commerce website</h1>
+                    <img class="pr-3 md:w-6/12 lg:w-6/12"  src="./static/images/E-commerce.jpg" alt="">
+                    <div >                                                                                                  
+                    <p class="pt-3 lg:text-3xl md:text-2xl">Made an amazon clone using Html and CSS. <a  href="https://github.com/vrushtishahh/amazon.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    
+                    </div>
+                 </div>
+            
+            
+            <div >
+                <h1 class="pt-5 pb-5 text-black font-extrabold md:text-2xl lg:text-4xl text-lg">Portfolio website</h1>
+                <img class="pr-3 lg:w-6/12 md:w-6/12"  src="./static/images/portfolioImg.jpg" alt="">
+                <div >
+                <p class="pt-3 lg:text-3xl md:text-2xl">Made a personalized portfolio website using Html, CSS and JavaScript <a href="#" class="newTab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                
+                </div>
+            </div>
+              
+    </section>
+    <div class="boxes">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <span class="absolute left-35 bg-opacity-20 bg-white border-white border-solid border-opacity-20 sm:w-10 sm:h-10  w-16 h-16 animate-waving-hand" ></span>
+    <section id="contactMe" class="link active_link padding">
+      <div >
+          <h2 class="font-extrabold text-xl pt-5 lg:text-5xl ">Contact Me</h2>
+          <div class="pt-2 lg:text-2xl md:text-2xl" >
+              <i class="fa-solid fa-envelope"></i>
+              vrushtishah2008@gmail.com
+          </div>
+          <div class="pt-2 lg:text-2xl md:text-2xl">
+              <i class="fa-solid fa-phone"></i>
+              (+91) 9429244933
+          </div>
+          <div class="pt-2 lg:text-2xl md:text-2xl">
+          <a href="https://www.linkedin.com/in/vrushti-shah-548393229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/vrushtishahh"><i class="fa-brands fa-github"></i></a>
+          <a href="./static/images/resume new.pdf" download>Download CV</a>
+          </div>
+          
+      </div>
+      
+      <form action="/" method="post" class="pt-3 flex flex-col md:w-6/12 lg:w-6/12"  name="submit-to-google-sheet">
+        <input class="border" id="name" type="text" placeholder="Your Name" id="name" name="name" required>
+        <input class="border" id="email" type="email" placeholder="Enter your Email" id="email" name="email" required>
+        <textarea class="border" id="message" name="message" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+        <button class="bg-orange-950 pt-3  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="toggleContent('hi')" type="submit">Submit</button>
+    </form> 
+    
+  
+  </section>
+  
+  
+  <script src="static/js/script.js"></script>
+  
+    
+    
+    
+
+</body>
+
+</html>
