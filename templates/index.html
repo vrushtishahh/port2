@@ -28,7 +28,7 @@
    
 </head>
 
-<body class="bg-pink-400      text-black font-serif pl-3 pr-3 lg:pl-10">
+<body class="bg-gradient-to-t from-red-700 to-amber-300      text-black font-serif pl-3 pr-3 lg:pl-10">
     <header>
         <h1 class="font-serif lg:text-3xl md:text-2xl    font-bold pt-3">My Portfolio</h1>
         <nav class="flex justify-evenly md:text-xl lg:text-xl min-w-fit pt-4 text-xs">
@@ -44,7 +44,7 @@
     
     
     
-
+    
     <section id="home" class="flex flex-wrap items-center pt-5 min-w-fit">
         <div class=" rounded-sm  ">
             <img src="./static/images/me.jpg" class="rounded-t-full lg:w-72 lg:h-72  md:ml-32 mr-20  shadow-md  w-60 h-60 border-2 border-black rounded-b-full object-cover" alt="">
@@ -61,28 +61,66 @@
     </div>
     </section>
     <span class="absolute left-35 bg-opacity-20 bg-white border-white border-solid border-opacity-20  w-16 h-16 animate-waving-hand" ></span>
+    
     <section id="aboutMe" >
       <h1 class="font-extrabold md:text-4xl text-xl lg:text-5xl pb-5">About Me</h1>
       <button id="hiButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="toggleContent('hi')">Skills</button>
       <button id="helloButton" class="ml-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="toggleContent('hello')">Education</button>
     
       <div id="hiContent" class="mt-8 text-lg md:text-2xl lg:text-3xl ">
-        <p>Html</p>
-        <p>Css</p>
-        <p>JavaSript</p>
-        <p>Java</p>
-        <p>C</p>
+        <div class="p-4">
+            <p class="mb-2">HTML</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-10/12 bg-red-400" >80%</div>
+            </div>
+          
+            <p class="mt-4 mb-2">CSS</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-10/12 bg-green-600" >80%</div>
+            </div>
+          
+            <p class="mt-4 mb-2">TailwindCSS</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-10/12 bg-yellow-600" >80%</div>
+            </div>
+
+            <p class="mt-4 mb-2">Flask</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-5/12 bg-purple-600" >45%</div>
+            </div>
+
+            <p class="mt-4 mb-2">Python</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-4/12 bg-orange-200" >35%</div>
+            </div>
+
+            <p class="mt-4 mb-2">JavaScript</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-8/12 bg-pink-800" >65%</div>
+            </div>
+
+            <p class="mt-4 mb-2">Java</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class=" text-white rounded-full w-9/12 bg-green-300" >75%</div>
+            </div>
+          
+            <p class="mt-4 mb-2">C</p>
+            <div class="container rounded-full bg-gray-300">
+              <div class="rounded-full text-white w-10/12 bg-rose-300" >80%</div>
+            </div>
+          </div>
+          
       </div>
     
       <div id="helloContent" class="hello-content mt-8 md:text-2xl text-lg lg:text-3xl ">
-        <p>10th grade</p>
+        <p class="font-semibold">10th grade</p>
         <p>Bright Day School, Vadodara 82%</p>
-        <p>12th grade</p>
-        <p>Swaminarayan School, Bhilad 87%</p>
-        <p>College</p>
+        <p class="font-semibold">12th grade</p>
+        <p>Shree Swaminarayan Higher Secondary School, Bhilad 87%</p>
+        <p class="font-semibold">College</p>
         <p>Sardar Vallabhbhai Patel Institute Of Technology</p>
-        <p>CPI:</p>
-        <p>SPI 4th sem</p>
+        <p>CPI:7.96</p>
+        
       </div>
 
       </section>
@@ -91,15 +129,15 @@
       
       
       <span class="absolute left-35 bg-opacity-20 bg-white border-white border-solid border-opacity-20  w-16 h-16 animate-waving-hand" ></span>
-
+      
       <section id="projects" >
         
-        <h2 class="lg:text-5xl md:text-4xl   text-xl font-extrabold">Projects</h2>
+        <h2 class="lg:text-5xl md:text-4xl    text-xl font-extrabold">Projects</h2>
             
     
                 <div class="w-full">
                     <h1 class="pt-5 pb-5 text-black lg:text-4xl md:text-2xl font-extrabold text-lg">E-commerce website</h1>
-                    <img class="pr-3 md:w-6/12 lg:w-6/12"  src="./static/images/E-commerce.jpg" alt="">
+                    <img class="pr-3 md:w-6/12 lg:w-6/12 "  src="./static/images/E-commerce.jpg" alt="">
                     <div >                                                                                                  
                     <p class="pt-3 lg:text-3xl md:text-2xl">Made an amazon clone using Html and CSS. <a  href="https://github.com/vrushtishahh/amazon.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                     
@@ -111,20 +149,13 @@
                 <h1 class="pt-5 pb-5 text-black font-extrabold md:text-2xl lg:text-4xl text-lg">Portfolio website</h1>
                 <img class="pr-3 lg:w-6/12 md:w-6/12"  src="./static/images/portfolioImg.jpg" alt="">
                 <div >
-                <p class="pt-3 lg:text-3xl md:text-2xl">Made a personalized portfolio website using Html, CSS and JavaScript <a href="#" class="newTab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                <p class="pt-3 lg:text-3xl md:text-2xl">Made a personalized portfolio website using Html, TailwindCSS, JavaScript, MongoDB and Flask. <a href="#" class="newTab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 
                 </div>
             </div>
               
     </section>
-    <div class="boxes">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+    
       <span class="absolute left-35 bg-opacity-20 bg-white border-white border-solid border-opacity-20 sm:w-10 sm:h-10  w-16 h-16 animate-waving-hand" ></span>
     <section id="contactMe" class="link active_link padding">
       <div >
@@ -140,7 +171,7 @@
           <div class="pt-2 lg:text-2xl md:text-2xl">
           <a href="https://www.linkedin.com/in/vrushti-shah-548393229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/vrushtishahh"><i class="fa-brands fa-github"></i></a>
-          <a href="./static/images/resume new.pdf" download>Download CV</a>
+          <a class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" href="./static/images/resume new.pdf" download>Download CV</a>
           </div>
           
       </div>

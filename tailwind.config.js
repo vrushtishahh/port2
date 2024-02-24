@@ -3,7 +3,11 @@ module.exports = {
   content: ["./templates/*.html"], 
   theme: {
     extend: {
+      width:{
+        container: '90%',
+      },
       keyframes: {
+        
         wave: {
           from: {
              translateY:('+150%'),
@@ -31,6 +35,7 @@ module.exports = {
           },
           
         },
+        
 
         
       },
@@ -38,6 +43,7 @@ module.exports = {
       animation: {
         'waving-hand': 'wave 2s linear infinite',
         'bounce-once': 'bounceOnce ease-in 1s',
+        
       }
         
       
